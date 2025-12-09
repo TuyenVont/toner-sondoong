@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toner Sơn Đoòng — Landing Page</title>
+  <meta name="description" content="Toner Sơn Đoòng 273ml — cấp ẩm dịu nhẹ, phù hợp da nhạy cảm. Flash sale 12 giờ." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero-outer">
+    <div class="hero-block">
+      <div class="hero-left">
+        <h1 class="hero-title">Toner Sơn Đoòng</h1>
+        <p class="hero-desc">Cấp ẩm dịu nhẹ • Thích hợp cho da nhạy cảm • Chai 273ml</p>
+        <a class="btn btn-hero" href="https://s.shopee.vn/AUlhCdQL5M" target="_blank" rel="noopener">MUA NGAY</a>
+        <p class="hero-note">Ưu đãi khi đặt qua link này.</p>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image-wrap">
+          <img src="images/toner.jpg" alt="Toner Sơn Đoòng 273ml">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLASHSALE: moved to top (immediately after header) -->
+  <section class="section flash-wrapper top-flash" aria-label="Flash sale">
+    <div class="flash-card compact">
+      <div class="flash-left">
+        <div class="flash-head">
+          <span class="flash-badge">FLASH SALE</span>
+          <div class="flash-sub">Chai 273ml — Ưu đãi <strong id="fs-hours">12</strong> giờ</div>
+        </div>
+
+        <div class="price-row improved">
+          <div class="price-original thin">250.000<span class="currency">₫</span></div>
+          <div class="price-sale big" id="sale-price">
+            <span class="price-amount">130.000</span><span class="currency">₫</span>
+          </div>
+        </div>
+
+        <div class="discount-line">Giảm giá 48% — Số lượng có hạn</div>
+
+        <div class="countdown spaced" aria-live="polite">
+          <div class="cd-box wide">
+            <div class="cd-num" id="cd-hours">12</div>
+            <div class="cd-label">Giờ</div>
+          </div>
+          <div class="cd-box wide">
+            <div class="cd-num" id="cd-mins">00</div>
+            <div class="cd-label">Phút</div>
+          </div>
+          <div class="cd-box wide">
+            <div class="cd-num" id="cd-secs">00</div>
+            <div class="cd-label">Giây</div>
+          </div>
+        </div>
+
+        <a id="btn-flash" class="btn-flash-cta" href="https://s.shopee.vn/AUlhCdQL5M" target="_blank" rel="noopener">MUA NGAY – ƯU ĐÃI HÔM NAY</a>
+        <p class="flash-note">Áp dụng cho chai 273ml • Ưu đãi kết thúc khi đồng hồ về 00:00:00</p>
+      </div>
+
+      <div class="flash-right">
+        <img src="images/toner.jpg" alt="Toner Sơn Đoòng 273ml">
+      </div>
+    </div>
+  </section>
+
+  <main class="page">
+    <!-- WHY (detailed benefits) -->
+    <section class="section why">
+      <h2 class="section-title">Vì sao chọn Toner Sơn Đoòng?</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🌿</div>
+          <h3>Cấp ẩm dịu nhẹ</h3>
+          <p>Giữ ẩm suốt 24h, làm mềm da mà không gây bết rít — dưỡng ẩm sâu nhưng nhẹ.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">💧</div>
+          <h3>Làm sạch nhẹ</h3>
+          <p>Loại bỏ bụi bẩn và dầu thừa, giúp cân bằng da ngay sau bước rửa mặt.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🌱</div>
+          <h3>Phù hợp da nhạy cảm</h3>
+          <p>Thấm nhanh, công thức dịu nhẹ, không gây châm chích — phù hợp cho da dễ kích ứng.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BEFORE/AFTER SLIDER -->
+    <section class="section before-after">
+      <h2 class="section-title">Kết quả trước &amp; sau khi dùng Toner Sơn Đoòng</h2>
+      <p class="muted-center">Hiệu quả sau 4 tuần sử dụng đều đặn</p>
+
+      <div class="ba-slider" id="ba-slider" aria-label="Before and after slider">
+        <!-- base image (Before) -->
+        <img src="images/before-after.jpg" alt="Trước và sau - Toner Sơn Đoòng" class="ba-base">
+
+        <!-- overlay (After) -->
+        <div class="ba-overlay" id="ba-overlay">
+          <img src="images/before-after.jpg" alt="Sau - Toner Sơn Đoòng" class="ba-base">
+        </div>
+
+        <!-- handle -->
+        <div class="ba-handle" id="ba-handle" role="presentation" aria-hidden="true"></div>
+
+        <!-- labels -->
+        <div class="ba-label-left">Trước</div>
+        <div class="ba-label-right">Sau</div>
+      </div>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section class="section ingredients">
+      <h2 class="section-title">Thành phần sản phẩm</h2>
+
+      <div class="ingredients-grid">
+        <div class="main-ingredients card white">
+          <h3>Thành phần chính</h3>
+          <ul>
+            <li><strong>Phức hợp độc quyền X-Micobiome</strong>: Giảm mẫn cảm, tăng cường đề kháng cho da.</li>
+            <li><strong>Pentavitin &amp; Hyaluronic Acid</strong>: Điều tiết dầu nhờn, hỗ trợ thu nhỏ lỗ chân lông.</li>
+            <li><strong>Niacinamide</strong>: Dưỡng sáng, làm đều màu da, hỗ trợ mờ thâm mụn.</li>
+          </ul>
+        </div>
+
+        <div class="full-ingredients card white">
+          <h3>Thành phần đầy đủ</h3>
+          <div class="accordion" id="ing-acc">
+            <button class="acc-toggle" aria-expanded="false" aria-controls="acc-body">Xem thành phần đầy đủ</button>
+            <div id="acc-body" class="acc-body" hidden>
+              <p>
+                Aqua, Glycerin, Pentavitin (Saccharide Isomerate), Sodium Hyaluronate, Niacinamide, X-Micobiome Complex,
+                Betaine, Allantoin, Panthenol, Phenoxyethanol, Ethylhexylglycerin, Fragrance (mild).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USAGE -->
+    <section class="section usage">
+      <h2 class="section-title">Cách sử dụng</h2>
+      <div class="usage-cards">
+        <div class="usage-step">
+          <div class="num-circle">1</div>
+          <p>Rửa mặt sạch và lau khô nhẹ nhàng.</p>
+        </div>
+        <div class="usage-step">
+          <div class="num-circle">2</div>
+          <p>Cho toner ra bông/tay sạch, thoa đều khắp mặt &amp; cổ.</p>
+        </div>
+        <div class="usage-step">
+          <div class="num-circle">3</div>
+          <p>Vỗ nhẹ để dưỡng chất thấm sâu, tiếp tục bước dưỡng tiếp theo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <h2 class="section-title">Câu hỏi thường gặp (FAQ)</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Da nhạy cảm có dùng được không?</button>
+          <div class="faq-a" hidden>Được — công thức dịu nhẹ, đã thử nghiệm cho da nhạy cảm. Nếu bạn lo lắng, thử nghiệm ở vùng nhỏ trước khi dùng toàn mặt.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Toner này có gây bít tắc lỗ chân lông không?</button>
+          <div class="faq-a" hidden>Không — kết cấu lỏng nhẹ, không chứa thành phần gây tắc lỗ chân lông thông thường. Tuy nhiên tùy cơ địa từng người.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Có mùi hương không?</button>
+          <div class="faq-a" hidden>Sản phẩm có mùi nhẹ, tự nhiên. Nếu bạn nhạy cảm với hương liệu, hãy kiểm tra thành phần đầy đủ trước khi dùng.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Dùng bao lâu thì thấy hiệu quả?</button>
+          <div class="faq-a" hidden>Thông thường thấy cải thiện độ ẩm và mềm da sau 1 tuần, hiệu quả rõ hơn sau ~4 tuần sử dụng đều đặn.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Dùng chung với BHA / AHA được không?</button>
+          <div class="faq-a" hidden>Có thể dùng chung, nhưng nên tách buổi (ví dụ BHA buổi tối, toner buổi sáng) hoặc thử nghiệm từng bước để tránh kích ứng.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews">
+      <h2 class="section-title">Khách hàng nói gì</h2>
+      <div class="reviews-row">
+        <div class="review-card">
+          <div class="quote-icon">❝</div>
+          <p>“Dùng xong da mềm hơn hẳn, bớt căng rát. Mùi nhẹ dễ chịu.”</p>
+          <div class="review-author"><span class="avatar">A</span><cite>- Khách A</cite></div>
+        </div>
+
+        <div class="review-card">
+          <div class="quote-icon">❝</div>
+          <p>“Thấm nhanh, không bị rít. Buổi sáng dùng trước make-up rất ổn.”</p>
+          <div class="review-author"><span class="avatar">B</span><cite>- Khách B</cite></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMITMENT / POLICY -->
+    <section class="section policy">
+      <h2 class="section-title">Cam kết &amp; Chính sách</h2>
+      <ul class="policy-list">
+        <li><strong>100% hàng chính hãng</strong></li>
+        <li><strong>Đổi trả trong 7 ngày</strong> nếu dị ứng (theo điều kiện)</li>
+        <li><strong>Miễn phí giao hàng</strong> cho đơn từ 199.000₫</li>
+      </ul>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-final">
+      <div class="cta-card">
+        <h3>Trải nghiệm Toner Sơn Đoòng ngay hôm nay</h3>
+        <p class="cta-sub">Ưu đãi &amp; hàng chính hãng — chỉ qua link này.</p>
+        <a class="btn btn-cta-large" href="https://s.shopee.vn/AUlhCdQL5M" target="_blank" rel="noopener">ĐẶT MUA TẠI TRANG CHÍNH HÃNG</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Trang giới thiệu • của nhóm 3 EC204.Q11</small>
+  </footer>
+
+  <!-- JS: slider + accordions + countdown (12h localStorage) -->
+  <script>
+  /* ===== Slider ===== */
+  (function(){
+    const slider = document.getElementById('ba-slider');
+    const overlay = document.getElementById('ba-overlay');
+    const handle = document.getElementById('ba-handle');
+    if (!slider || !overlay || !handle) return;
+
+    function rect(){ return slider.getBoundingClientRect(); }
+    function setPos(clientX){
+      const r = rect();
+      let pct = (clientX - r.left) / r.width;
+      pct = Math.max(0, Math.min(1, pct));
+      overlay.style.left = (pct*100) + '%';
+      overlay.style.width = (100 - pct*100) + '%';
+      handle.style.left = 'calc(' + (pct*100) + '% - 12px)';
+    }
+
+    function init(){ setPos(rect().left + rect().width/2); }
+    window.addEventListener('resize', init);
+    init();
+
+    let dragging = false;
+    handle.addEventListener('pointerdown', e => {
+      dragging = true;
+      handle.setPointerCapture(e.pointerId);
+    });
+
+    window.addEventListener('pointermove', e => {
+      if (!dragging) return;
+      setPos(e.clientX);
+    });
+
+    window.addEventListener('pointerup', e => { dragging = false; });
+
+    slider.addEventListener('click', e => { if (e.target === handle) return; setPos(e.clientX); });
+
+    handle.tabIndex = 0;
+    handle.addEventListener('keydown', (e) => {
+      const r = rect();
+      const step = r.width * 0.02;
+      const leftPx = parseFloat(handle.style.left || (r.width/2 - 12)) + r.left;
+      if (e.key === 'ArrowLeft') setPos(leftPx - step);
+      if (e.key === 'ArrowRight') setPos(leftPx + step);
+    });
+  })();
+
+  /* ===== Accordions: Ingredients & FAQ ===== */
+  (function(){
+    // ingredients toggle
+    const ingToggle = document.querySelector('#ing-acc .acc-toggle');
+    if (ingToggle) {
+      ingToggle.addEventListener('click', function(){
+        const body = document.getElementById('acc-body');
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        if (body) body.hidden = expanded;
+      });
+    }
+
+    // faq toggles
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        const a = this.nextElementSibling;
+        const exp = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!exp));
+        if (a) a.hidden = exp;
+      });
+    });
+  })();
+
+  /* ===== Countdown with localStorage (12 hours) ===== */
+  (function(){
+    const TOTAL = 12 * 60 * 60 * 1000;
+    const KEY = 'sondoong_flash_end_v6';
+    let end;
+    try {
+      const s = localStorage.getItem(KEY);
+      if (s && !isNaN(parseInt(s,10)) && parseInt(s,10) > Date.now()) {
+        end = parseInt(s,10);
+      } else {
+        end = Date.now() + TOTAL;
+        localStorage.setItem(KEY, String(end));
+      }
+    } catch(e){ end = Date.now() + TOTAL; }
+
+    const elH = document.getElementById('cd-hours');
+    const elM = document.getElementById('cd-mins');
+    const elS = document.getElementById('cd-secs');
+    const elFs = document.getElementById('fs-hours');
+    const saleWrap = document.getElementById('sale-price');
+    const btn = document.getElementById('btn-flash');
+
+    function pad(n){ return String(n).padStart(2,'0'); }
+
+    function update(){
+      const now = Date.now();
+      let diff = Math.max(0, end - now);
+      const h = Math.floor(diff / (1000*60*60));
+      diff -= h * 1000*60*60;
+      const m = Math.floor(diff / (1000*60));
+      diff -= m * 1000*60;
+      const s = Math.floor(diff / 1000);
+
+      if (elH) elH.textContent = pad(h);
+      if (elM) elM.textContent = pad(m);
+      if (elS) elS.textContent = pad(s);
+      if (elFs) elFs.textContent = Math.max(0, Math.floor((end - Date.now()) / (1000*60*60)));
+
+      if (end - Date.now() <= 0) {
+        clearInterval(t);
+        if (saleWrap) {
+          saleWrap.textContent = 'HẾT ƯU ĐÃI';
+          saleWrap.style.background = 'transparent';
+          saleWrap.style.color = '#fff';
+        }
+        if (btn) {
+          btn.textContent = 'FLASH SALE KẾT THÚC';
+          btn.style.pointerEvents = 'none';
+          btn.style.opacity = '0.7';
+        }
+        try{ localStorage.removeItem(KEY); }catch(e){}
+      }
+    }
+    update();
+    const t = setInterval(update, 1000);
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+﻿:root{
+  --green:#1E5B45;
+  --cream:#FEE6BA;
+  --text:#1b1b1b;
+  --muted: rgba(27,27,27,0.62);
+  --shadow-yellow: rgba(250,200,100,0.16);
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background: var(--cream);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.45;
+  padding-bottom:36px;
+}
+
+/* Page wrapper */
+.page{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ---------- HERO (adjusted) ---------- */
+.hero-outer{padding:28px 0 6px}
+.hero-block{
+  max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:24px;
+  background:linear-gradient(180deg,var(--green) 0%, var(--green) 100%);
+  color:#fff;border-radius:24px;padding:28px 24px;box-shadow:0 20px 44px rgba(0,0,0,0.16);
+}
+.hero-left{flex:1 1 360px;min-width:220px}
+.hero-title{font-size:2rem;margin-bottom:6px;font-weight:800}
+.hero-desc{font-size:0.96rem;margin-bottom:12px;opacity:0.95}
+.hero-note{font-size:0.82rem;color:rgba(255,255,255,0.9);margin-top:8px}
+.hero-right{flex:0 0 320px;text-align:right}
+.hero-image-wrap{width:260px;margin-left:auto}
+.hero-image-wrap img{width:100%;border-radius:14px;border:4px solid rgba(255,246,232,0.95);box-shadow:0 20px 48px rgba(0,0,0,0.34);object-fit:cover}
+
+/* Buttons */
+.btn{display:inline-block;text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:800;box-shadow:0 12px 28px rgba(0,0,0,0.12)}
+.btn-hero{display:inline-block;background:#fff;padding:10px 20px;border-radius:12px;color:var(--green);font-weight:700;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+.btn-hero:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(0,0,0,0.16)}
+
+/* SECTION spacing and titles (unified) */
+.section{margin-top:48px;margin-bottom:20px;max-width:920px;margin-left:auto;margin-right:auto;padding:0 12px}
+.section-title{font-size:1.6rem;text-align:center;font-weight:700;margin-bottom:22px;color:var(--green)}
+.muted-center{text-align:center;color:var(--muted);font-size:0.92rem;margin-bottom:12px}
+
+/* ---------- CARD STYLES (unified) ---------- */
+.card, .review-card, .white {
+  border-radius: 16px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border: 1px solid rgba(30,91,69,0.06);
+}
+.cards{display:flex;gap:14px;justify-content:space-between;align-items:stretch}
+.card-icon{font-size:20px;margin-bottom:8px}
+.card h3{color:var(--green);margin-bottom:6px;font-size:1rem}
+.card p{color:var(--muted);font-size:0.92rem}
+
+/* ================= FLASH SALE TOP ================= */
+.top-flash {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+/* Flash card beautiful override */
+.flash-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  border: 3px solid var(--green);
+}
+
+/* badge red */
+.flash-badge {
+  background: #ff3b30;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* price layout */
+.price-row.improved {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price-sale.big {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.price-original.thin {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+/* flash CTA as green block */
+.btn-flash-cta {
+  display: block;
+  margin-top: 16px;
+  padding: 12px;
+  text-align: center;
+  background: var(--green);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+}
+
+/* small adjustments inside flash card */
+.flash-left{flex:1 1 420px;min-width:240px}
+.flash-head{display:flex;flex-direction:column;gap:6px}
+.flash-sub{color:var(--green);font-size:0.95rem;margin-top:4px} /* changed to green to contrast on white */
+.discount-line{margin-top:6px;color:var(--muted);font-weight:700;font-size:0.9rem}
+.flash-right{flex:0 0 160px;text-align:right;min-width:140px}
+.flash-right img{width:140px;height:auto;border-radius:10px;border:4px solid rgba(255,246,232,0.95);box-shadow:0 16px 36px rgba(0,0,0,0.24);object-fit:cover}
+.flash-note{font-size:0.85rem;margin-top:8px;color:var(--muted)}
+
+/* countdown boxes (white with green text) */
+.countdown.spaced{display:flex;gap:14px;align-items:center;margin-top:10px;margin-bottom:8px}
+.cd-box.wide{background:#fff;color:var(--green);min-width:82px;padding:10px 12px;border-radius:10px;text-align:center;box-shadow:0 12px 28px rgba(0,0,0,0.12)}
+.cd-num{font-weight:900;font-size:1.1rem}
+.cd-label{font-size:0.78rem;color:rgba(30,91,69,0.95);margin-top:4px}
+
+/* ========= BEFORE/AFTER SLIDER (kept) ========= */
+.ba-slider{
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  margin: 14px auto 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--green);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.08);
+  background: var(--cream);
+}
+.ba-base{display:block;width:100%;height:auto;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.ba-overlay{position:absolute;top:0;left:50%;width:50%;height:100%;overflow:hidden;transition:left 0.12s linear,width 0.12s linear;z-index:2}
+.ba-overlay .ba-base{height:100%;width:100%;object-fit:cover;transform:translateX(-50%)}
+.ba-handle{position:absolute;top:0;left:calc(50% - 12px);width:24px;height:100%;cursor:ew-resize;z-index:4}
+.ba-handle::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:36px;height:36px;border-radius:50%;background:var(--cream);border:3px solid var(--green);box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.ba-handle::after{content:'';position:absolute;left:50%;top:0;transform:translateX(-50%);width:2px;height:100%;background:rgba(0,0,0,0.06)}
+.ba-label-left,.ba-label-right{position:absolute;bottom:8px;padding:6px 10px;border-radius:12px;font-weight:700;font-size:0.95rem;background:rgba(255,255,255,0.95);color:var(--green);box-shadow:0 8px 18px rgba(0,0,0,0.06);z-index:5}
+.ba-label-left{left:12px}
+.ba-label-right{right:12px}
+
+/* ---------- FAQ, USAGE, REVIEWS (kept but consistent) ---------- */
+.usage-cards{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.usage-step{background:#fff;border-radius:10px;padding:12px;display:flex;gap:12px;align-items:flex-start;flex:1;border:1px solid rgba(30,91,69,0.06);box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.num-circle{width:36px;height:36px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(30,91,69,0.06);padding:10px 0}
+.faq-q{width:100%;text-align:left;background:transparent;border:0;padding:8px 0;font-weight:800;color:var(--green);cursor:pointer}
+.faq-a{color:var(--muted);padding:6px 0 12px 0}
+.reviews-row{display:flex;gap:12px;margin-top:8px}
+.review-card{flex:1;background:#fff;padding:12px;border-radius:10px;border:1px solid rgba(30,91,69,0.06);box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.quote-icon{font-size:22px;color:var(--green);margin-bottom:8px}
+.review-author{display:flex;align-items:center;gap:8px;margin-top:10px}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:800}
+
+/* ---------- POLICY & CTA FINAL ---------- */
+.policy-list{max-width:540px;margin:0 auto;padding-left:18px;color:var(--muted);list-style:disc;line-height:1.6}
+.policy-list li{margin-bottom:8px;font-weight:700}
+.cta-final{display:flex;justify-content:center;margin-top:18px}
+.cta-card{background:var(--green);color:#fff;border-radius:16px;padding:18px 22px;text-align:center;box-shadow:0 20px 48px var(--shadow-yellow);max-width:760px;width:100%}
+.cta-card h3{font-size:1.05rem;margin-bottom:6px}
+.cta-sub{color:rgba(255,255,255,0.92);margin-bottom:12px}
+.btn-cta-large{background:var(--cream);color:var(--green);padding:12px 22px;border-radius:14px;font-weight:900;text-decoration:none;box-shadow:0 18px 36px var(--shadow-yellow)}
+
+/* FOOTER */
+.footer{text-align:center;color:var(--muted);padding:20px 12px 36px;font-size:0.9rem}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .hero-block{flex-direction:column;align-items:flex-start;padding:16px}
+  .hero-right{text-align:center;width:100%}
+  .hero-image-wrap{width:220px}
+  .cards{flex-direction:column}
+  .ingredients-grid{grid-template-columns:1fr}
+  .usage-cards{flex-direction:column}
+  .reviews-row{flex-direction:column}
+  .flash-card{flex-direction:column;align-items:flex-start;padding:14px}
+  .flash-right{order:-1;text-align:left;margin-bottom:8px}
+  .flash-right img{width:120px}
+  .ba-slider{max-width:100%}
+}
+
+@media (max-width:520px){
+  .hero-title{font-size:1.2rem}
+  .price-sale{font-size:1.2rem}
+  .cd-box.wide{min-width:64px;padding:8px}
+  .hero-image-wrap{width:160px}
+  .flash-right img{width:120px}
+  .ba-slider{border-radius:12px}
+}
+/* ---------- FIX FAQ FONT / STYLE ---------- */
+/* Đặt chắc font-family cho FAQ (giống phần còn lại của trang) */
+.faq-list,
+.faq-item,
+.faq-q,
+.faq-a {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Câu hỏi */
+.faq-q {
+  font-weight: 800;                /* đậm để nổi */
+  font-size: 1.02rem;              /* vừa phải, không quá to */
+  line-height: 1.4;
+  letter-spacing: 0.0px;
+  color: var(--green);
+  background: transparent;
+  padding: 10px 0;
+  text-align: left;
+  display: block;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Câu trả lời */
+.faq-a {
+  font-weight: 400;                /* bình thường để đọc thoải mái */
+  font-size: 0.98rem;
+  line-height: 1.7;                /* khoảng cách dòng tốt cho paragraph */
+  color: var(--muted);
+  padding: 8px 0 16px 0;
+  margin: 0;
+  transition: max-height 0.22s ease, opacity 0.18s ease;
+  /* nếu bạn muốn animation mở/đóng mượt: */
+  max-height: 2000px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* Khi collapsed (JS vẫn dùng hidden attr) - thêm class fallback */
+.faq-item.collapsed .faq-a,
+.faq-a[hidden] {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Giữ khoảng cách giữa các mục FAQ */
+.faq-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(30,91,69,0.06);
+}
+
+/* Nếu nhìn vẫn "giống serif" trên 1 số máy: ép dùng sans fallback */
+@media screen {
+  .faq-q, .faq-a { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, -apple-system, sans-serif; }
+}
