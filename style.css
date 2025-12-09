@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --green:#1E5B45;
   --cream:#FEE6BA;
   --text:#1b1b1b;
@@ -267,4 +267,109 @@ body{
 /* Nếu nhìn vẫn "giống serif" trên 1 số máy: ép dùng sans fallback */
 @media screen {
   .faq-q, .faq-a { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, -apple-system, sans-serif; }
+}
+/* ----- Thành phần chính: style danh sách ----- */
+.main-ingredients-list {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 6px;
+}
+
+.main-ingredients-list li {
+  margin-bottom: 10px;
+  font-size: 1.02rem;
+  font-weight: 400;                /* mô tả bình thường */
+  color: var(--muted);
+}
+
+/* Tên thành phần (màu xanh đậm, đậm hơn) */
+.main-ingredients-list li strong {
+  color: var(--green);
+  font-weight: 800;
+  margin-right: 6px;
+  font-size: 1.02rem;
+}
+
+/* Mô tả ngay sau tên (giữ normal weight, cùng dòng) */
+.main-ingredients-list li .mi-desc {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ----- Accordion button (thành phần đầy đủ) ----- */
+.accordion .acc-toggle {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--green);
+  border: 2px solid rgba(30,91,69,0.12);
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .12s ease, transform .08s ease;
+}
+
+.accordion .acc-toggle[aria-expanded="true"] {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+  transform: translateY(-1px);
+}
+
+/* Accordion panel */
+.acc-body {
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+/* ----- Reviews styling (avatar + name) ----- */
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:0.95rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.review-card cite {
+  font-weight:700;
+  color: var(--green);
+  display:block;
+}
+
+/* Make sure review text is natural */
+.review-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Slight spacing fix for ingredient card top */
+.main-ingredients.card.white h3,
+.full-ingredients.card.white h3 {
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+/* Make the accordion button not look like default input on old browsers */
+button.acc-toggle { font-family: inherit; }
+
+/* Optional: reduce heavy global bolding if exists (safety) */
+.ingredients-grid, .main-ingredients-list, .review-card {
+  font-weight: 400;
 }
